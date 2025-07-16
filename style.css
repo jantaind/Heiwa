@@ -1,0 +1,115 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  height: 400px;
+  flex: 0 0 22%;
+  max-width: 22%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.all img {
+  height: 220px !important;
+  object-fit: fill;
+}
+
+.ci img {
+  height: 300px;
+  object-fit: fill;
+}
+
+.card img {
+  object-fit: fill;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+/* Tablet: 3 cards */
+@media (max-width: 992px) {
+  .card {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+}
+
+/* Mobile: 2 cards */
+@media (max-width: 600px) {
+  .card {
+    flex: 0 0 47%;
+    max-width: 47%;
+  }
+
+  .all img {
+    height: 170px !important;
+    object-fit: fill;
+  }
+
+  .ci img {
+    /* height: 200px !important; */
+    object-fit: fill;
+  }
+}
+
+/* Optional: very small phones */
+@media (max-width: 380px) {
+  .card {
+    flex: 0 0 47%;
+    max-width: 47%;
+  }
+
+  .ci img {
+    /* height: 150px !important; */
+    object-fit: fill;
+  }
+
+}
+
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.wa-contact {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+
+.wa-contact a img{
+  text-decoration: none;
+  height: 80px;
+  width: 80px;
+}
+
+@media (max-width: 768px) {
+  .wa-contact {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+  }
+}

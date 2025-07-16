@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+
+    <link rel="icon" type="image/png" href="/img/image.png">
+    <title>Heiwa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- <img src="img/logo.png" width="120px"  alt="Logo"> -->
+                <div class="flex-shrink-0 text-2xl font-bold text-blue-600">
+                    HEIWA FAN
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLWqL5wOaF3gTmk2y14yU7-wpH5FJ0KTUbmd2F--XAP_FD4Q/viewform?usp=dialog"
+                        class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+            <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+            <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLWqL5wOaF3gTmk2y14yU7-wpH5FJ0KTUbmd2F--XAP_FD4Q/viewform?usp=dialog"
+                class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662302/carousel1_ambd6r.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>HEIWA FAN</h5>
+                    <p>Loyalty In Quality</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662304/carousel2_ddhker.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>HEIWA FAN</h5>
+                    <p>Loyalty In Quality</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662305/carousel3_drzsvh.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Loyalty In Quality</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- All Fans -->
+    <h2 class="text-2xl font-semibold m-4 text-gray-800">All Fans</h2>
+    <section class="card-section">
+        <div class=" card-container">
+            <div class="card all">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662150/ceiling_1_zjr6tl.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Classic Brown Fan 48</h5>
+                </div>
+            </div>
+
+            <div class="card all">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662150/ceiling_2_tlpcj5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">White Fan 48</h5>
+
+                </div>
+            </div>
+
+            <div class="card all">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662149/3_cdaeao.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Classic Plain</h5>
+
+                </div>
+            </div>
+            <div class="card all">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662150/brown_wgw4g6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Brown Fan</h5>
+
+                </div>
+            </div>
+            <div class="card all">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662150/hb_white_sesmzm.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">HB White</h5>
+
+                </div>
+            </div>
+            <div class="card all">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662149/24_white_wwczvy.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">White 24</h5>
+
+                </div>
+            </div>
+            <div class="card all">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662149/brown_24_jnedfz.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Brown 24</h5>
+
+                </div>
+            </div>
+             <div class="card all">
+                <img src="img/table/table fan.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Brown 24</h5>
+
+                </div>
+            </div>
+        </div>
+    </section><hr>
+
+    <!-- Ceiling & Table Fan Spare Parts -->
+    <h2 class="text-2xl font-semibold m-8 text-gray-800">All T.P.W & Ceiling Fan Spare Parts</h2>
+    <section>
+        <div class="card-container">
+            <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662151/starter_copper_48inch_l81xck.png" class="card-img-top" alt="Fan Starter">
+                <div class="card-body">
+                    <h5 class="card-title">Ceiling Fan Starter 48inch </h5>
+                    <ul>
+                        <li>Copper & Aluminium both Available</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662150/roader_12mm_mg0lmn.png" class="card-img-top" alt="Table Fan Starter">
+                <div class="card-body">
+                    <h5 class="card-title">Roader</h5>
+                    <p class="card-text">Roader 12mm</p>
+                </div>
+            </div>
+            <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662150/shaft_matxki.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ceiling Fan Shaft</h5>
+                    <p class="card-text">All sizes Available</p>
+                </div>
+            </div>
+            <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662151/starter_24inch_whoons.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ceiling Fan Starter 24inch</h5>
+                    <ul>
+                        <li>Copper & Aluminium both Available</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662149/body_24inch_rctglp.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Body</h5>
+                    <p class="card-text">Ceiling Fan Body 24inch</p>
+                </div>
+            </div>
+        <!-- </div>
+    </section><hr> -->
+
+    <!-- <h2 class="text-2xl font-semibold m-8 text-gray-800">Table Fan Spare Parts</h2>
+    <section>
+        <div class="card-container"> -->
+            <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662231/starter_table_gvf3lq.png" class="card-img-top" alt="Fan Starter">
+                <div class="card-body">
+                    <h5 class="card-title">Starter</h5>
+                    <p class="card-text">Table Fan starter</p>
+                </div>
+            </div>
+            <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662230/coled_inner_g9ahkg.png" class="card-img-top" alt="Table Fan Starter">
+                <div class="card-body">
+                    <h5 class="card-title">coled inner</h5>
+                    <p class="card-text">Available in Different Color</p>
+                </div>
+            </div>
+            <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662231/hyb_gear_box_h8thzn.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">HYB Gear Box</h5>
+                    <p class="card-text">All Gear Box Available with High Quality</p>
+                </div>
+            </div>
+            <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662231/switch_zekigf.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Switch</h5>
+                    <p class="card-text">All switches Available </p>
+                </div>
+            </div>
+            <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662232/normal_body_hlxo9b.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Body</h5>
+                    <p class="card-text">Normal and Heavy Body Available</p>
+                </div>
+            </div>
+            <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662230/blade_jpkgnq.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Blade</h5>
+                    <p class="card-text">Blades With Multiple Designs </p>
+                </div>
+            </div>
+            <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662363/ring_belt_bpyiev.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ring Belt</h5>
+                    <p class="card-text">All Types </p>
+                </div>
+            </div>
+            <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662353/looping_wire_ocbil1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Looping Wire</h5>
+                    <p class="card-text">3 core and 5 core</p>
+                </div>
+            </div>
+            <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662361/main_cord_wire_xhjtsl.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Main Cord Wire</h5>
+                    <p class="card-text">Available Multiple Qualities</p>
+                </div>
+            </div>
+             <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662362/motor_hl1df9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Motor</h5>
+                    <p class="card-text">Available</p>
+                </div>
+            </div>
+             <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662366/rotary_dory_csern1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Rotery & Dory Knob</h5>
+                    <p class="card-text">Wall Fan Rotery Switch & Dory & Dory Knob</p>
+                </div>
+            </div>
+             <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662368/shaft_kfur3r.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Shaft</h5>
+                    <p class="card-text">Shaft Available 1</p>
+                </div>
+            </div>
+             <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662371/switch_box_2_p7uebj.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Switch Boxes</h5>
+                    <p class="card-text">All Designs & Colors Available</p>
+                </div>
+            </div>
+             <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662371/switch_box_2_p7uebj.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Table Fan Bush</h5>
+                    <p class="card-text">Available</p>
+                </div>
+            </div>
+            <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662375/table_fan_gear_box_cepqn2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Gear Box (Table Fan)</h5>
+                    <p class="card-text">Low & High Qualities Available </p>
+                </div>
+            </div>
+            <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662375/table_fan_gear_box_cepqn2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pivot Table Fan</h5>
+                    <p class="card-text">Table Fan Pivot Single Pack</p>
+                </div>
+            </div>
+             <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662365/roater_pankie_porkwu.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Roter cap, Pankie</h5>
+                    <p class="card-text">Roter Cap, Pankie, China Pankie, and 4mm Washer </p>
+                </div>
+            </div>
+             <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662310/coilet_set_tcfz4k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Coilet</h5>
+                    <p class="card-text">Coilet 22mm & 25mm</p>
+                </div>
+            </div>
+             <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662338/katori_joy7ud.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Katori</h5>
+                    <p class="card-text">22mm & 25mm</p>
+                </div>
+            </div>
+             <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662373/switch_box_3_ufslui.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Switch Boxes</h5>
+                    <p class="card-text">Available</p>
+                </div>
+            </div>
+             <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662300/buffer_capacitor_lamps_msh9ue.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Buffer & Capacitor Clamps</h5>
+                    <p class="card-text">Available</p>
+                </div>
+            </div>
+             <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662300/buffer_capacitor_lamps_msh9ue.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Felt Washer </h5>
+                    <p class="card-text">Available All Types</p>
+                </div>
+            </div>
+             <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662336/guard_show_x7gngt.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Guard Show</h5>
+                    <p class="card-text">In Multiple Colors</p>
+                </div>
+            </div>
+             <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662406/talwar_blade_afwpq1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Talwar Blade</h5>
+                    <p class="card-text">Available</p>
+                </div>
+            </div>
+             <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752664039/toofan_blade_lu1nfw.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Toofan Blade</h5>
+                    <p class="card-text">Available</p>
+                </div>
+            </div>
+             <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752664040/wall_fan_gear_box_jvjdgn.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Wall Fan Gear Box</h5>
+                    <p class="card-text">Available</p>
+                </div>
+            </div>
+             <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752664161/wall_fan_clutch_ry2w72.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Wall Fan Clutch</h5>
+                    <p class="card-text">Available</p>
+                </div>
+            </div>
+             <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752664227/washer_xd08j5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Washer</h5>
+                    <p class="card-text">Available</p>
+                </div>
+            </div>
+             <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752664227/wire_capsol_xcxxdd.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Wire Capssol</h5>
+                    <p class="card-text">Available</p>
+                </div>
+            </div>
+            <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662296/aluminium_wire_g6z06k.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Aluminium</h5>
+                    <p class="card-text">Aluminium Winding Wire</p>
+                </div>
+            </div>
+            <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752662407/tape_qwtcg2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Tape</h5>
+                    <p class="card-text">Self Adhesive Tape</p>
+                </div>
+            </div>
+            <div class="card ci" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dupjvzbip/image/upload/v1752664806/tie_o1odsb.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Tie</h5>
+                    <ul>
+                        <li>Nylon Cable Tie</li>
+                        <li>1,000 Qantities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section><hr>
+
+
+
+
+    <div class="wa-contact">
+        <a href="https://wa.me/message/7JGXGJLEY6IGG1"> <img
+                src="https://static.vecteezy.com/system/resources/previews/024/398/617/original/whatsapp-logo-icon-isolated-on-transparent-background-free-png.png"
+                alt=""> </a>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-6">
+
+            <!-- Logo & Brand -->
+            <div>
+                <h2 class="text-2xl font-bold text-white">Reach Us</h2>
+                <p class="mt-2 text-sm"><strong>Janta Industries</strong>
+                    7-8-261/A, GAUTAM NAGAR BALANAGAR, Hyderabad-500011</p>
+            </div>
+
+            <!-- Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-2 text-white">Company</h3>
+                <ul class="space-y-1 text-sm">
+                    <li><a href="about.html" class="hover:underline">About Us</a></li>
+                    <!-- <li><a href="#" class="hover:underline">Careers</a></li>
+                    <li><a href="#" class="hover:underline">Blog</a></li> -->
+                </ul>
+            </div>
+
+            <!-- Support -->
+            <div>
+                <h3 class="text-lg font-semibold mb-2 text-white">Support</h3>
+                <ul class="space-y-1 text-sm">
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeLWqL5wOaF3gTmk2y14yU7-wpH5FJ0KTUbmd2F--XAP_FD4Q/viewform?usp=dialog"
+                            class="hover:underline">Contact</a></li>
+                    <!-- <li><a href="#" class="hover:underline">Warranty</a></li>
+                    <li><a href="#" class="hover:underline">FAQ</a></li> -->
+                </ul>
+            </div>
+
+            <!-- Social -->
+            <div>
+                <h3 class="text-lg font-semibold mb-2 text-white">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/profile.php?id=100067186346639" class="hover:text-white"><i
+                            class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-8 text-sm text-gray-500">
+            © 2025 Janta Industries. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
